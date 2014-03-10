@@ -1,0 +1,35 @@
+h1 {
+	text-align: center;
+	font-weight: bold;
+	text-transform: capitalize;
+	color: #FFF;
+}
+
+nav { 
+	font-family: serif;
+	color: #D9C180;
+	background-color: #000;
+}
+
+section h2 {
+	font-size: 1.5em;
+	font-family: sans-serif;
+	color: #382E13;
+}
+
+article.left {
+	text-align: center;
+	font-family: serif;
+}
+
+article.right {
+	text-align: center;
+	font-family: serif;
+}
+
+footer {
+	background-color: #000;
+	background-size: 200px;
+	color: #382E13;
+	font-family: serif;
+}
