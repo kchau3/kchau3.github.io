@@ -1,0 +1,107 @@
+@font-face {
+	font-family: 'LeagueGothic';
+	src: url('type/LeagueGothic-Regular.oft');
+	src: url('type/LeagueGothic-Italic.oft');
+	src: url('type/LeagueGothic-CondensedRegular.oft');
+	src: url('type/LeagueGothic-CondensedItalic.oft');
+}
+
+body {
+	margin: auto;
+	font-family: LeagueGothic;
+	width: 1000px;
+}
+
+header {
+	height: 120px;
+	margin: auto;
+
+}
+
+
+h1 {
+	text-align: left;
+	font-weight: bold;
+	font-size: 48px;
+	text-transform: uppercase;
+	color: #000;
+	padding-left: 30px;
+}
+
+#sidenav { 
+	
+	height: auto;
+	text-align: left;
+	padding: .02px;
+	position: relative;
+	float: left;
+	height: 1000px;
+	margin-right: 50px;
+	line-height: 2.5em;
+	font-weight: bold;
+
+
+}
+
+#sidenav li {
+	list-style: none;
+	display: block;
+}
+
+
+
+#topnav li{
+	font-size: 1em;
+	display: inline;
+	margin-left: 20px;
+	padding-right: 30px;
+	position: relative;
+	float: right;
+
+
+}
+
+section {
+	position: relative;
+	margin-left: 30px;
+	margin-right: auto;
+	text-align: center;
+	width: 100%;
+	height: auto;
+
+}
+
+h2 {
+	font-size: 1.5em;
+	color: #382E13;
+	text-transform: uppercase;
+}
+
+h3{
+
+	font-size: 1em;
+	line-height: 1em;
+
+}
+article {
+	width: 80%;
+	position: relative;
+	text-align: left;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	margin-left: 50px;
+
+
+}
+.clear {
+	clear: both;
+}
+footer {
+	position: relative;
+	margin: auto;
+	text-align: center;
+	padding: 10px;
+	background-color: #453226;
+	height: 100px;
+	color: #D9C180;
+}
