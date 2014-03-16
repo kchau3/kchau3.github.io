@@ -1,4 +1,34 @@
 @font-face {
+	font-family: "LeagueGothic-Regular";
+	src: url("type/LeagueGothic-Regular.otf");
+
+}
+
+@media screen and (min-width:600px) {
+}
+
+@media screen and (max-width:599px) {
+ 
+  }
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.clearright {
+	clear: right;
+}
+
+.clearleft{
+	clear: left;
+}
+@font-face {
 	font-family: 'LeagueGothic';
 	src: url('type/LeagueGothic-Regular.oft');
 	src: url('type/LeagueGothic-Italic.oft');
@@ -9,11 +39,11 @@
 body {
 	margin: auto;
 	font-family: LeagueGothic;
-	width: 1000px;
+	width: 100%;
 }
 
 header {
-	height: 120px;
+	height: 50px;
 	margin: auto;
 
 }
@@ -22,10 +52,13 @@ header {
 h1 {
 	text-align: left;
 	font-weight: bold;
-	font-size: 48px;
+	font-size: 80px;
 	text-transform: uppercase;
 	color: #000;
-	padding-left: 30px;
+	padding: 20px 0px 0px 30px;
+	margin: auto;
+	font-family: LeagueGothic-Regular;
+	clear: both;
 }
 
 #sidenav { 
@@ -37,8 +70,8 @@ h1 {
 	float: left;
 	height: 1000px;
 	margin-right: 50px;
-	line-height: 2.5em;
 	font-weight: bold;
+	width: 40%;
 
 
 }
@@ -46,21 +79,43 @@ h1 {
 #sidenav li {
 	list-style: none;
 	display: block;
+	font-family: sans-serif;
+	font-weight: bolder;
+	font-size: 14px;
+	padding-bottom: 15px;
+
 }
 
+hr {
+	border-width: 2px;
+	clear: both;
 
+
+
+}
 
 #topnav li{
-	font-size: 1em;
+	font-size: 16px;
 	display: inline;
-	margin-left: 20px;
+	margin-right: 20px;
 	padding-right: 30px;
-	position: relative;
 	float: right;
+	font-family: sans-serif;
+	font-weight: bolder;
+
 
 
 }
 
+ul a {
+	color: #000;
+	text-decoration: none;
+}
+
+ul a:hover {
+	color: #7a99a1;
+	text-decoration: none;
+}
 section {
 	position: relative;
 	margin-left: 30px;
@@ -72,24 +127,28 @@ section {
 }
 
 h2 {
-	font-size: 1.5em;
-	color: #382E13;
+	font-size: 2em;
 	text-transform: uppercase;
+	font-family: LeagueGothic-Regular;
+	font-weight: lighter;
+	margin-bottom: -10px;
 }
 
 h3{
 
 	font-size: 1em;
-	line-height: 1em;
+	font-family: sans-serif;
+	margin-bottom: -30px;
 
 }
 article {
-	width: 80%;
+	width: 90%;
 	position: relative;
 	text-align: left;
 	margin-top: 20px;
 	margin-bottom: 50px;
-	margin-left: 50px;
+	margin-left: 40px;
+	font-family: sans-serif;
 
 
 }

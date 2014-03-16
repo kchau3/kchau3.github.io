@@ -1,69 +1,123 @@
+@font-face {
+	font-family: "LeagueGothic-Regular";
+	src: url("type/LeagueGothic-Regular.otf");
+
+}
+
+@media screen and (min-width:600px) {
+}
+
+@media screen and (max-width:599px) {
+ 
+  }
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.center{
+	position: relative;
+	margin: auto;
+}
+.clearfix {
+  overflow: auto;
+}
+
 body {
-	background-color: #E3E3E3;
+	position: static;
+	background-color: #FFF;
 	margin: auto;
 }
 
 header {
-	height: 220px;
+	height: 300px;
 	background-color: #453226;
+	background-image: url(images/coffee-bean-background.jpg);
 	margin: auto;
-	padding-top: 20px;
+	padding: 1px;
 
 }
+
+#dream {
+	font-family: Georgia;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 30px;
+	color: #cebb99;
+	text-decoration: none;
+	border-bottom:6px dotted;
+
+}
+
 
 h1 {
 	text-align: center;
 	font-weight: bold;
 	text-transform: capitalize;
 	color: #FFF;
+	font-family: LeagueGothic-Regular;
+	font-weight: lighter;
+	line-height: 50px;
+	font-size: 60px;
+	vertical-align: top;
 }
 
 nav { 
 	
-	background-color: #000;
-	height: auto;
+	background-color: #230b03;
+	height: 30px;
 	text-align: center;
-	padding: .02px;
+	
 
 }
 
 nav li{
-	color: #D9C180;
+	color: #cebb99;
 	font-family: serif;
-	font-size: 1.3em;
+	font-size: 20px;
 	display: inline;
-	margin-left: 20px;
+	line-height: 28px;
+	margin-right: 40px;
 
 
 }
 
+a {
+	color: #cebb99;
+	text-decoration: none;
+}
+a:hover {
+	color: #FFF;
+	text-decoration: none;
+	font-weight: bolder;
+}
 section {
-	position: relative;
-	margin-left: auto;
-	margin-right: auto;
+	width: 100%;
+	margin: auto;
+	max-width: 900px;
+}
+
+article {
+	width: 40%;
+	float: left;
+	margin: 50px 20px 50px 20px;
 	text-align: center;
-	width: 80%;
-	height: auto;
 
 }
 
 h2 {
-	font-size: 1.5em;
+	font-size: 20px;
 	font-family: sans-serif;
-	color: #382E13;
+	color: #3b2313;
 }
 
-article {
-	width: 35%;
-	position: relative;
-	float: left;
+article p {
 	text-align: center;
 	font-family: serif;
-	margin-top: 20px;
-	margin-bottom: 50px;
-	margin-left: 20px;
-
+	font-size: 14px;
 }
+
 .clear {
 	clear: both;
 }
@@ -72,7 +126,7 @@ footer {
 	margin: auto;
 	text-align: center;
 	padding: 10px;
-	background-color: #453226;
+	background-color: #230b03;
 	height: 100px;
 	color: #D9C180;
 	font-family: serif;
