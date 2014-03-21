@@ -1,6 +1,8 @@
 <html>
 <head>
 	<title>Kathy Chau</title>
+	<!--MASTER STYLESHEET-->
+	<link rel="stylesheet" type="text/css" href="master.css">
 	<!--FOR LARGE AND MEDIUM SCREENS -->
 	<link rel="stylesheet" type="text/css" media="(min-width: 500px)" href="stylesheet1.css">
 	<!--FOR SMALL SCREENS -->
@@ -8,7 +10,7 @@
 </head>
 <div class="wrapper">
 <body>
-	<header>
+	<header class="navbar">
 		<nav>
 			<ul>
 				<li><a href="#about">About</a></li>
@@ -21,9 +23,11 @@
 		</nav>
 	</header>
 	<section id="about">
-	<h1>Kathy Chau</h1>
-		<img width="300px" src=""/>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lobortis augue id lectus ornare tristique. Nam non nunc libero. Ut ut erat orci. Nullam fermentum tempus erat non molestie. Maecenas blandit quis erat eu rutrum. Nam suscipit ultricies nisl, a vestibulum est congue convallis.</p>
+		<article class="bio">
+			<h1>Kathy Chau</h1>
+			<img width="300px" src=""/>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lobortis augue id lectus ornare tristique. Nam non nunc libero. Ut ut erat orci. Nullam fermentum tempus erat non molestie. Maecenas blandit quis erat eu rutrum. Nam suscipit ultricies nisl, a vestibulum est congue convallis.</p>
+		</article>
 		<aside class="callout">
 			<h3>Technical Skills</h3>
 				<ul>
@@ -31,10 +35,10 @@
 					<li>Wireframing</li>
 					<li>HTML/CSS</li>
 				</ul>
-			</aside>
-		</section>
+		</aside>
+	</section>
 		<!--PORTFOLIO SECTION 1-->
-		<section id="portfolio1">
+		<section id="portfolio1" class="clear">
 			<article class="rightText">
 				<h2>UI/UX</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lobortis augue id lectus ornare tristique. Nam non nunc libero.</p>
