@@ -8,7 +8,7 @@
 	<!--FOR SMALL SCREENS -->
 	<link rel="stylesheet" type="text/css" media="(max-width: 499px)" href="stylesheet2.css">
 </head>
-<div class="wrapper">
+<div class="wrapper" class="clearfix">
 <body>
 	<header class="navbar">
 		<nav>
@@ -16,13 +16,15 @@
 				<li><a href="#about">About</a></li>
 				<li><a href="#portfolio1">UI/UX</a></li>
 				<li><a href="#portfolio2">Branding</a></li>
-				<li><a href="#portfolio2">Print</a></li>
+				<li><a href="#portfolio3">Print</a></li>
 				<li><a href="#portfolio4">Illustration</a></li>
 				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
-	<section id="about">
+	<!--START CONTENT WRAPPER-->
+	<div class="contentWrapper" class="clearfix">
+	<section id="about" class="clearfix">
 		<article class="bio">
 			<h1>Kathy Chau</h1>
 			<img width="300px" src=""/>
@@ -38,12 +40,12 @@
 		</aside>
 	</section>
 		<!--PORTFOLIO SECTION 1-->
-		<section id="portfolio1" class="clear">
-			<article class="rightText">
+		<section id="portfolio1" class="clearfix">
+			<article class="rightText" class="clearfix">
 				<h2>UI/UX</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lobortis augue id lectus ornare tristique. Nam non nunc libero.</p>
 			</article>
-			<article class="leftImages">
+			<article class="leftImages" class="clearfix">
 				<div class="image1">
 					<img class="previewImages" src="images/image-placeholder.png" a href="" />
 					<div class="hoverText">
@@ -76,12 +78,12 @@
 		</section>
 
 		<!--PORTFOLIO SECTION 2-->
-		<section id="portfolio2">
-			<article class="leftText">
+		<section id="portfolio2" class="clearfix">
+			<article class="leftText" class="clearfix">
 				<h2>Branding</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lobortis augue id lectus ornare tristique. Nam non nunc libero.</p>
 			</article>
-			<article class="rightImages">
+			<article class="rightImages" class="clearfix">
 				<div class="image1">
 					<img class="previewImages" src="images/image-placeholder.png" a href="" />
 					<div class="hoverText">
@@ -114,12 +116,12 @@
 		</section>
 
 		<!--PORTFOLIO SECTION 3-->
-		<section id="portfolio3">
-			<article class="rightText">
+		<section id="portfolio3" class="clearfix">
+			<article class="rightText" class="clearfix">
 				<h2>Print</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lobortis augue id lectus ornare tristique. Nam non nunc libero.</p>
 			</article>
-			<article class="leftImages">
+			<article class="leftImages" class="clearfix">
 				<div class="image1">
 					<img class="previewImages" src="images/image-placeholder.png" a href="" />
 					<div class="hoverText">
@@ -152,12 +154,12 @@
 		</section>
 
 		<!--PORTFOLIO SECTION 4-->
-		<section id="portfolio4">
-			<article class="leftText">
+		<section id="portfolio4" class="clearfix">
+			<article class="leftText" class="clearfix">
 				<h2>Illustration</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lobortis augue id lectus ornare tristique. Nam non nunc libero.</p>
 			</article>
-			<article class="rightImages">
+			<article class="rightImages" class="clearfix">
 				<div class="image1">
 					<img class="previewImages" src="images/image-placeholder.png" a href="" />
 					<div class="hoverText">
@@ -190,11 +192,12 @@
 		</section>
 
 		<!--CONTACT SECTION-->
-		<section id="contact">
+		<section id="contact" class="clearfix">
 			<article>
 				<h2>Connect with me!</h2>
 			</article>
 		</section>
+		</div>
 </body>
 </div>
 </html>
