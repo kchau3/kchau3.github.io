@@ -7,6 +7,22 @@
 	<link rel="stylesheet" type="text/css" media="(min-width: 500px)" href="stylesheet1.css">
 	<!--FOR SMALL SCREENS -->
 	<link rel="stylesheet" type="text/css" media="(max-width: 499px)" href="stylesheet2.css">
+	<!-- Add jQuery library -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script type="text/javascript" src="/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+	<!-- Add fancyBox -->
+	<link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+	</script>
+
 </head>
 <div class="wrapper" class="clearfix">
 <body>
@@ -47,7 +63,9 @@
 			</article>
 			<article class="leftImages" class="clearfix">
 				<div class="image1">
-					<img class="previewImages" src="images/image-placeholder.png" a href="" />
+					
+					<a class="fancybox" class="previewImages" rel="group" href="weather-ui-1.jpg"><img src="weather-ui-preview.jpg" alt="" /></a>
+
 					<div class="hoverText">
 						<h4>Title</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
