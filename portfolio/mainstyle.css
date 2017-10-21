@@ -1,14 +1,43 @@
-.aboutStyle {
-  text-align: : center;
-  background-color: #84B5CC;
+* {
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+  border: 0px;
 }
 
-.designStyle {
-  text-align: : left;
-  background-color: ##A884CC;
+.divFullScreen {
+    width: auto;
+    height: 100vh;
+    margin: 0 0 0 0;
+    padding: 100px;
+
 }
 
-p {
+.divMainSection {
+    position: relative;
+    width: 100% auto;
+    height: 100vh;
+    padding: 50px;
+    background-color: white;
+
+}
+
+h1About {
+  color: #84B5CC;
+  font-size: 60px;
+}
+
+h1Design {
   color: #41C589;
+  font-size: 60px;
+}
+
+pAbout {
+  color: black;
+  font-size: 30px;
+}
+
+pDesign {
+  color: black;
   font-size: 30px;
 }
