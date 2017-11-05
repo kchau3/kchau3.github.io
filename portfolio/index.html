@@ -3,23 +3,55 @@
 <head>
   <link rel="stylesheet" type="text/css" href="./mainstyle.css">
   <title>Kathy's Portfolio</title>
+
 </head>
 
 <body>
 
-  <div class="divFullScreen" style="background-color:#84B5CC;">
-    <div class="divMainSection">
-      <h1 class="h1About">About</h1>
-      <p class="pAbout">some text about me</p>
+  <div class="divAboutBg">
+    <div class="divAboutMain">
+    <nav>
+      <div class="navBar">
+        <h1>
+          <span class="h1About">Kathy</span>
+          <span class="x">X</span>
+          <div class="navDropdown">
+          <span class="navButton" button onclick="myFunction()">About</button></span>
+        </h1>
+        <div id="dropdown" class="dropdownContent">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+        <script>
+        function myFunction() {
+            document.getElementById("dropdown").classList.toggle("show");
+        }
+
+        window.onclick = function(event) {
+          if (!event.target.matches('.navButton')) {
+
+            var dropdowns = document.getElementsByClassName("dropdownContent");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
+    </nav>
+    <p class="pAbout">some text about me</p>
+
+
+    </div>
     </div>
   </div>
 
-  <div class="divFullScreen" style="background-color:#A884CC;">
-    <div class="divMainSection">
-      <h1 class="h1Design">Design</h1>
-      <p class="pDesign">some text about my skillz</p>
-    </div>
-  </div>
+
 
 </body>
 </html>

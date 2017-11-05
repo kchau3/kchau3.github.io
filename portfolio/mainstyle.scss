@@ -1,0 +1,169 @@
+$aboutPrimaryColor: #079DAC;
+$aboutSecondaryColor: #33F7CA;
+$designPrimaryColor: #AC0777;
+$designSecondaryColor: #FF80E6;
+
+$bgDivPosition: none;
+$bgDivWidth: 100% auto;
+$bgDivHeight: 100% auto;
+$bgDivMargin: 0px 0px 0px 0px;
+$bgDivPadding: 100px;
+
+$mainDivPosition: fixed;
+$mainDivWidth: 100% auto;
+$mainDivHeight: 700px;
+$mainDivMargin: 0px 0px 0px 0px;
+$mainDivPadding: 0px 50px 50px 50px;
+
+$headerFontSize: 100px;
+$headerFontWeight: lighter;
+$headerFontFamily: sans-serif;
+$headerTextTransform: uppercase;
+
+$navActiveFontSize: 100px;
+$navActiveFontWeight: bolder;
+$navActiveFontFamily: sans-serif;
+$navActiveTextTransform: uppercase;
+
+$navInactiveFontSize: 100px;
+$navInactiveFontWeight: bolder;
+$navInactiveFontFamily: sans-serif;
+$navInactiveTextTransform: uppercase;
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+  border: 0px;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+
+.navBar {
+  background-color: #F9F9F9;
+  width: $mainDivWidth;
+  height: 100px;
+  text-align: center;
+}
+
+.navDropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.navButton {
+  color: black;
+  font-size: $navActiveFontSize;
+  font-weight: $navActiveFontWeight;
+  font-family: $navActiveFontFamily;
+  text-transform: $navActiveTextTransform;
+  border: none;
+  cursor: pointer;
+}
+
+.navButton:hover, .navButton:focus {
+  color: #434343;
+
+}
+
+.dropdownContent {
+  display: none;
+  position: relative;
+  align-content: center;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdownContent a {
+  color: black;
+  padding-left: 440px;
+  font-family: $navInactiveFontFamily;
+  font-size: $navInactiveFontSize;
+  font-weight: $navInactiveFontWeight;
+  text-transform: $navInactiveTextTransform;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdownContent a:hover {
+  color: #434343;
+}
+
+.show {
+  display: block;
+}
+
+
+.divAboutBg {
+  position: $bgDivPosition;
+  width: $bgDivWidth;
+  height: $bgDivHeight;
+  margin: $bgDivMargin;
+  padding: $bgDivPadding;
+  background-color: $aboutPrimaryColor;
+}
+
+.divAboutMain {
+  position: $mainDivPosition;
+  width: $mainDivWidth;
+  height: $mainDivHeight;
+  margin: $mainDivMargin;
+  padding: $mainDivPadding;
+  background-color: $aboutSecondaryColor;
+}
+
+.divDesignBg {
+  position: $bgDivPosition;
+  width: $bgDivWidth;
+  height: $bgDivHeight;
+  margin: $bgDivMargin;
+  padding: $bgDivPadding;
+  background-color: $designPrimaryColor;
+}
+
+.divDesignMain {
+  position: $mainDivPosition;
+  width: $mainDivWidth;
+  height: $mainDivHeight;
+  margin: $mainDivMargin;
+  padding: $mainDivPadding;
+  background-color: $designSecondaryColor;
+}
+
+.x {
+  color: black;
+  font-size: 50px;
+  font-weight: lighter;
+  line-height: 2px;
+  opacity: .3;
+  margin: 0px 50px 0px 50px;
+
+}
+
+.h1About {
+  color: $aboutPrimaryColor;
+  font-size: $headerFontSize;
+  font-weight: $headerFontWeight;
+  font-family: $headerFontFamily;
+  text-transform: $headerTextTransform;
+}
+
+.h1Design {
+  color: $designPrimaryColor;
+  font-size: $headerFontSize;
+  font-weight: $headerFontWeight;
+  font-family: $headerFontFamily;
+  text-transform: $headerTextTransform;
+}
+
+.pAbout {
+  color: black;
+  font-size: 30px;
+}
+
+.pDesign {
+  color: black;
+  font-size: 30px;
+}
