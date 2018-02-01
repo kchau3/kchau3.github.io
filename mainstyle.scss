@@ -112,6 +112,29 @@ $navInactiveTextTransform: uppercase;
   margin: $mainDivMargin;
   padding: $mainDivPadding;
   background-color: $aboutSecondaryColor;
+  transition: background-color 2s ease-out;
+
+  &.divAboutMainPage1 {
+    background-color: red;
+  }
+
+  &.divAboutMainPage2 {
+    background-color: blue;
+  }
+
+  &.divAboutMainPage3 {
+    background-color: pink;
+  }
+}
+
+.divAboutMainBlog {
+  position: $mainDivPosition;
+  width: $mainDivWidth;
+  height: $mainDivHeight;
+  margin: $mainDivMargin;
+  padding: $mainDivPadding;
+  background-color: red;
+  transition: background-color 2s ease-out;
 }
 
 .divDesignBg {

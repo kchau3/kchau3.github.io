@@ -65,7 +65,23 @@
   height: 700px;
   margin: 0px 0px 0px 0px;
   padding: 0px 50px 50px 50px;
-  background-color: #33F7CA; }
+  background-color: #33F7CA;
+  transition: background-color 2s ease-out; }
+  .divAboutMain.divAboutMainPage1 {
+    background-color: red; }
+  .divAboutMain.divAboutMainPage2 {
+    background-color: blue; }
+  .divAboutMain.divAboutMainPage3 {
+    background-color: pink; }
+
+.divAboutMainBlog {
+  position: fixed;
+  width: 100% auto;
+  height: 700px;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 50px 50px 50px;
+  background-color: red;
+  transition: background-color 2s ease-out; }
 
 .divDesignBg {
   position: none;

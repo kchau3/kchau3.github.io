@@ -1,1 +1,73 @@
-<h1>This is Kathy's website</h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="./mainstyle.css">
+  <title>Kathy's Portfolio</title>
+
+</head>
+
+<body>
+
+  <div class="divAboutBg">
+    <div class="divAboutMain">
+    <nav>
+      <div class="navBar">
+        <h1>
+          <span class="h1About">Kathy</span>
+          <span class="x">X</span>
+          <div class="navDropdown">
+          <span class="navButton" button onclick="myFunction()">About</button></span>
+        </h1>
+        <div id="dropdown" class="dropdownContent">
+          <a href="#" onclick="onNavLinkPage1Click()">Link 1</a>
+          <a href="#" onclick="onNavLinkPage2Click()">Link 2</a>
+          <a href="#" onclick="onNavLinkPage3Click()">Link 3</a>
+        </div>
+      </div>
+
+    </nav>
+    <p class="pAbout">some text about me</p>
+
+
+    </div>
+    </div>
+  </div>
+  <script>
+  const navLinkClassesToRemove = ['divAboutMainPage1', 'divAboutMainPage2', 'divAboutMainPage3'];
+
+  function onNavLinkPage1Click() {
+    document.querySelector('.divAboutMain').classList.remove(...navLinkClassesToRemove);
+    document.querySelector('.divAboutMain').classList.add('divAboutMainPage1')
+  }
+
+  function onNavLinkPage2Click() {
+    document.querySelector('.divAboutMain').classList.remove(...navLinkClassesToRemove);
+    document.querySelector('.divAboutMain').classList.add('divAboutMainPage2')
+  }
+
+  function onNavLinkPage3Click() {
+    document.querySelector('.divAboutMain').classList.remove(...navLinkClassesToRemove);
+    document.querySelector('.divAboutMain').classList.add('divAboutMainPage3')
+  }
+
+  function myFunction() {
+      document.getElementById("dropdown").classList.toggle("show");
+      document.querySelector('.divAboutMain').classList.remove(...navLinkClassesToRemove);
+  }
+
+  window.onclick = function(event) {
+    if (!event.target.matches('.navButton')) {
+
+      var dropdowns = document.getElementsByClassName("dropdownContent");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+  </script>
+</body>
+</html>
